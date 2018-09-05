@@ -1,5 +1,21 @@
+body{
+    background: center no-repeat url("../images/fond.jpg");
+}
 h2 {
     color : lightskyblue;
+}
+h1 {
+    color : darkblue;
+}
+.tatou{
+    color : darkorchid;
+    text-decoration : underline;
+    text-transform: uppercase;
+}
+p {
+    color : midnightblue;
 
-
+}
+h3 {
+    color : darkblue;
 }
