@@ -3,10 +3,10 @@
 <head>
 	<title>FORMULAIRE</title>
 	<meta  charset="UTF-8">
-	<meta name="title" content="Titre de la page">
-	<meta name="description" content="description de la page">
-	<meta name="author" content="prenon NOM">
-	<meta name="keywords" content="mots-clé1, mots-clé2, ...">
+	<meta name="formulaire" content="formulaire">
+	<meta name="description" content="formulaire">
+	<meta name="author" content="Simon Savard">
+	<meta name="keywords" content="formulaire">
 	<meta name="robots" content="index,follow">
 	<link rel="stylesheet " href ="CSS/Style.css"/>
 </head>
@@ -15,43 +15,48 @@
 		<div class="Entete">Entrez les informations du membre</div>
 		<form action="" method="get"/>
 
-	<label>Nom:<input type="text" placeholder="Dogg" name="name" value=""/></label>
-
-		<label>Prénom:<input type="text" placeholder="snoop" name="prenom" value=""/></label>
-
-
-
-			<br/>
+			<label>Nom:<input type="text" placeholder="Dogg" name="name" required value="" /></label>
+			</br>
+			</br>
+			<label>Prénom:<input type="text" placeholder="snoop" name="prenom" required value=""/></label>
+			</br>
+			</br>
 			<label>Adresse:</label><input type="text" placeholder="1234 Rue Yolo" name="adresse" value=""/>
-			<br/>
-			<label>Ville:</label><input type="Ville" placeholder="Jonquiere Town" name="ville" value=""/>
-			<br/>
-			<label>Téléphone:</label><input type="tel" placeholder="418-123-6789" name="tel" value=""/>
-			<br/>
-			<label>Date d'inscription:</label><input type="date" name="date" value=""/>
-			<br/>
+			</br>
+			</br>
+			<label>Ville:</label><input type="text" placeholder="Jonquiere Town" name="ville" value=""/>
+			</br>
+			</br>
+			<label>Téléphone:</label><input type="tel" placeholder="418-123-6789" name="tel" required value=""/>
+			</br>
+			</br>
+			<label>Date d'inscription: </label><input type="date" name="date" value=""/>
+			</br>
+			</br>
 			<label>Date de fin:</label><input type="date" name="datefin" value=""/>
-			<br/>
+			</br>
+			</br>
+			<label>Sexe</label> <input type="radio" name="sexe" id="homme" value="1"><label for="homme">Homme</label>
+			<input type="radio" name="sexe" id="femme" value="2"><label for="femme">Femme</label>
+			</br>
 
-			<label>Sexe:</label><input type="radio" name="sexe" id="homme" value="1"/><label for="homme">Homme</label>
-						<input type="radio" name="sexe" id="Femme" Value="2"/><label for="Femme">Femme</label>
-						<input type="radio" name="sexe" id="Alien" Value="3"/><label for="Alien">Alien</label>
-						<input type="radio" name="sexe" id="Dinosaure" value="4"/><label for="Dinosaure">Dinosaure</label>
-						<input type="radio" name="sexe" id="Robot" value="5"/><label for="Robot">Robot</label>
-			<br/>
+			</br>
 
-			<label>Choix de carte de crédit:</label><select name="Maliste">
+			<label>Choix de carte de crédit:</label>
+			<select name="Maliste" required>
 				<option value="carte1">Visa</option>
 				<option value="carte2">MasterCard</option>
-				<option value="carte3">AméricanExpress</option>
+				<option value="carte3">Américan Express</option>
 			</select>
-			<br/>
-			<label>Mot de passe:</label><input type="password" placeholder="A4B3C2D1" name="mdp" value=""/>
-			<br/>
+			</br>
+			</br>
+			<label>Mot de passe:</label><input type="password" placeholder="A4B3C2D1" name="mdp" required value=""/>
+			</br>
+			</br>
 			<label>Courriel:</label><input type="text" placeholder="MarcusLeRapide@EnFeu.cas" name="courriel" value=""/>
-			<br/>
-			<br/>
-			<input type="submit" name="summit" value="envoyer"/><input type="reset" name="reset" value="Remettre a zero"/>
+			</br>
+			</br>
+			<div class="bouton"><input type="submit" name="summit" value="envoyer"/><input type="reset" name="reset" value="Remettre a zero"/></div>
 		</form>
 	</div>
 </body>
