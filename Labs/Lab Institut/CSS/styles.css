@@ -156,4 +156,61 @@ footer p {
 
 }
 
+label{
+	font-weight: bold;
+	width: 150px;
+	margin-bottom: 15px;
+	display: inline-block;
+}
+.envoie
+{
+	text-align: center;
+	margin-left: 19%;
+	width: 10%;
+}
+.reset
+{
+	text-align: center;
+	margin-left: 20px;
+	width: 10%;
+}
+form
+{
+margin-left: 10%;
+}
+#sondage
+{
+	border: 2px double black;
+}
+#comm
+{
+	display: flex;
+
+}
+.nom
+{
+	text-align: left;
+}
+#titre
+{
+	color: black;
+}
+table,tr,td
+{
+	border: 1px solid black;
+}
+table
+	
+{
+	float: right;
+	margin-right: 20px;
+	margin-top: 90px;
+}
+.summit
+{
+	margin-left: 19%;
+
+}
+
+
 
