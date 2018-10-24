@@ -9,6 +9,6 @@ function btnCalculer_onclick()
 
  	Reste = ((Revenus-Loyer-Nourriture-Deplacement)/4);
 
-    console.log(Reste+" $ pour la semaine");
+    console.log(Reste+" $ pour la semaine ");
 
 }

@@ -6,6 +6,6 @@ function btnCalculer_onclick()
     tauxChange = parseFloat(document.getElementById("tauxChange").value);
     euro = argentCan*tauxChange;
 
-    console.log(euro+" £ ")
+    console.log(euro+" £")
 
 }

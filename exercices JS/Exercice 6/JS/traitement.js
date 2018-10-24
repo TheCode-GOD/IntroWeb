@@ -9,6 +9,6 @@ function btnCalculer_onclick()
 
  	TotCent = ((UnCent*0.01)+(CinqCent*0.05)+(DixCent*0.1)+(VingtCinqCent*0.25));
 
-    console.log(TotCent+" $ Canadien Tire");
+    console.log(TotCent+" $ Canadien Tire ");
 
 }

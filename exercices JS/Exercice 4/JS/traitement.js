@@ -9,6 +9,6 @@ function btnCalculer_onclick()
 
  	Cout = ((Distance/100)*Consomation*Essence);
 
-    console.log(Cout.toFixed(2)+" $"+" pour aller à "+Destination);
+    console.log(Cout.toFixed(2)+" $ "+"pour aller à "+Destination);
 
 }

@@ -5,5 +5,5 @@ function btnCalculer_onclick()
     moyKmMois =  parseFloat(document.getElementById("entrerKm").value);
     totKm = ((moyKmMois*12)*5) ;
 
-    console.log(totKm+" Km ")
+    console.log(totKm+" Km")
 }

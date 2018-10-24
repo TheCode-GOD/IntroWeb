@@ -5,5 +5,5 @@ function btnCalculer_onclick()
     poids = parseFloat(document.getElementById("txtpoids").value);
     kg = (poids*2.2);
 
-    console.log(kg+" Kg ");
+    console.log(kg+" Kg");
 }
