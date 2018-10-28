@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <link rel="stylesheet" href="CSS/style.css">
+   <title>Le Cinéclub</title>
+<meta charset="UTF-8">
+</head>
+<body>
+<!-- Boite de texte -->
+<form action="" method="get">
+   <fieldset>
+      <legend><h1>Le Cinéclub</h1></legend>
+      <!-- Boîtes de texte -->
+      <p> Entrez le prix de base:<input id="txtBasePrix" name="txtBasePrix" ></p>
+      <p> Entrez l'âge:<input id="txtAge" name="txtAge" ></p>
+       <!-- Radio bouton -->
+      Midi<input type="radio" name="radChoix"  id="radMidi">
+      Soir<input type="radio" name="radChoix" id="radSoir">
+      <!-- label affichage -->
+      <p id="lblMessage" name="lblMessage"></p>
+      <!-- Bouton -->
+      <input class="label_plus" id="btnCalculer" name="btnCalculer" value="C A L C U  L E R" type="button" onclick="btnCalculer_onclick()">   </fieldset>
+</form>
+<script src="JS/traitement.js"></script>
+</body>
+</html>
