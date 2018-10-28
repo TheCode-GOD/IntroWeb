@@ -28,7 +28,7 @@ function btnCalculer_onclick()
        }
     }
 
-    TotPrix = (BasePrix+Reduction);
+    TotPrix = (BasePrix*Reduction);
 
     console.log("Votre billet coutera "+TotPrix+"$");
 }
