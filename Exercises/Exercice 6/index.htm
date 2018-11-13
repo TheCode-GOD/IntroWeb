@@ -15,48 +15,44 @@
 		<div class="Entete">Entrez les informations du membre</div>
 		<form action="" method="get"/>
 
-			<label>Nom:<input type="text" placeholder="Dogg" name="name" required value="" /></label>
-			</br>
-			</br>
-			<label>Prénom:<input type="text" placeholder="snoop" name="prenom" required value=""/></label>
-			</br>
-			</br>
-			<label>Adresse:</label><input type="text" placeholder="1234 Rue Yolo" name="adresse" value=""/>
-			</br>
-			</br>
-			<label>Ville:</label><input type="text" placeholder="Jonquiere Town" name="ville" value=""/>
-			</br>
-			</br>
-			<label>Téléphone:</label><input type="tel" placeholder="418-123-6789" name="tel" required value=""/>
-			</br>
-			</br>
-			<label>Date d'inscription: </label><input type="date" name="date" value=""/>
-			</br>
-			</br>
-			<label>Date de fin:</label><input type="date" name="datefin" value=""/>
-			</br>
-			</br>
-			<label>Sexe</label> <input type="radio" name="sexe" id="homme" value="1"><label for="homme">Homme</label>
-			<input type="radio" name="sexe" id="femme" value="2"><label for="femme">Femme</label>
-			</br>
+			<div><label>Nom: </label><input type="text" placeholder="Dogg" name="name" required value="" /></div>
 
-			</br>
 
-			<label>Choix de carte de crédit:</label>
-			<select name="Maliste" required>
-				<option value="carte1">Visa</option>
-				<option value="carte2">MasterCard</option>
-				<option value="carte3">Américan Express</option>
-			</select>
-			</br>
-			</br>
-			<label>Mot de passe:</label><input type="password" placeholder="A4B3C2D1" name="mdp" required value=""/>
-			</br>
-			</br>
-			<label>Courriel:</label><input type="text" placeholder="MarcusLeRapide@EnFeu.cas" name="courriel" value=""/>
-			</br>
-			</br>
+			<div><label>Prénom: </label><input type="text" placeholder="snoop" name="prenom" required value=""/></div>
+
+			<div><label>Adresse:</label><input type="text" placeholder="1234 Rue Yolo" name="adresse" value=""/></div>
+
+			<div><label>Ville:</label><input type="text" placeholder="Jonquiere Town" name="ville" value=""/></div>
+
+			<div><label>Téléphone:</label><input type="tel" placeholder="418-123-6789" name="tel" required value=""/></div>
+
+			<div><label>Date d'inscription: </label><input type="date" name="date" value=""/></div>
+
+
+			<div><label>Date de fin:</label><input type="date" name="datefin" value=""/></div>
+
+
+			<div><label>Sexe</label> <input class="radio" type="radio" name="sexe" id="homme" value="1"><label for="homme">Homme</label>
+			<input type="radio" name="sexe" id="femme" value="2"><label for="femme">Femme</label></div>
+
+			<label>Carte de crédit:</label>
+					<select name="Maliste" required>
+						<option value="carte1">Visa</option>
+					<option value="carte2">MasterCard</option>
+					<option value="carte3">Américan Express</option>
+				</select>
+
+
+
+			<div><label>Mot de passe:</label><input type="password" placeholder="A4B3C2D1" name="mdp" required value=""/></div>
+
+
+			<div>2<label>Courriel:</label><input type="text" placeholder="MarcusLeRapide@EnFeu.cas" name="courriel" value=""/></div>
+			
+			
 			<div class="bouton"><input type="submit" name="summit" value="envoyer"/><input type="reset" name="reset" value="Remettre a zero"/></div>
+		
+			
 		</form>
 	</div>
 </body>
