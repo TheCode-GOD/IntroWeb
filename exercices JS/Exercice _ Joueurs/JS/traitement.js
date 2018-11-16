@@ -82,7 +82,7 @@ function  btnTrouverMeilleur_onclick()
     document.getElementById("lblReponse").innerHTML = "Le meillleur joueur est le numéro " + TabJoueurNumero[i]
 }
 
-/*if ((TabJoueurNumero[0] < TabJoueurNumero[1])||(TabJoueurNumero[0] < TabJoueurNumero[2])||(TabJoueurNumero[0]<TabJoueurNumero[3]))
+/* if ((TabJoueurNumero[0] < TabJoueurNumero[1])||(TabJoueurNumero[0] < TabJoueurNumero[2])||(TabJoueurNumero[0]<TabJoueurNumero[3]))
     {
         PlusPetitJoueur = 1;
 
