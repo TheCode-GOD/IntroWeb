@@ -1,4 +1,4 @@
-var NomJoueur, MeilleurJoueur, PointJoueur, TotFinal,cpt,TabJoueurNom = new Array(4),TabJoueurNumero = new Array(4);
+var NomJoueur, MeilleurJoueur,  PointJoueur, cpt,TabJoueurNom = new Array(4),TabJoueurNumero = new Array(4);
 
 TotFinal = 0;
 cpt=0;
@@ -27,9 +27,13 @@ function btnAjouter_onclick()
 }
 function btnTrouverMoy_onclick()
 {
+    var TotFinal
+
     TotFinal = (TabJoueurNumero[0]+TabJoueurNumero[1]+TabJoueurNumero[2]+TabJoueurNumero[3])/4;
 
     document.getElementById("lblReponse").innerHTML = "Votre moyenne est de : "+TotFinal;
+
+    return TotFinal;
 }
 
 function disabledBouton()
@@ -40,42 +44,61 @@ function disabledBouton()
     document.getElementById("btnTrouverPire").disabled = false;
 }
 
-function  btnTrouverMeilleur_onclick()
-{
-     if ((TabJoueurNumero[0] > TabJoueurNumero[1])||(TabJoueurNumero[0] > TabJoueurNumero[2])||(TabJoueurNumero[0]>TabJoueurNumero[3]))
-     {
-         document.getElementById("lblReponse").innerHTML = "Le meilleur joueur est le numéro 1 ";
-     }
-     else if ((TabJoueurNumero[1] > TabJoueurNumero[0])||(TabJoueurNumero[1] > TabJoueurNumero[2])||(TabJoueurNumero[1]>TabJoueurNumero[3]))
-     {
-         document.getElementById("lblReponse").innerHTML = "Le meilleur joueur est le numéro 2 ";
-     }
-     else if ((TabJoueurNumero[2] > TabJoueurNumero[1])||(TabJoueurNumero[2] > TabJoueurNumero[0])||(TabJoueurNumero[2]>TabJoueurNumero[3]))
-     {
-         document.getElementById("lblReponse").innerHTML = "Le meilleur joueur est le numéro 3 ";
-     }
-     else
-     {
-         document.getElementById("lblReponse").innerHTML = "Le meilleur joueur est le numéro 4 ";
-     }
-}
+
 
 function  btnTrouverPire_onclick()
 {
-    if ((TabJoueurNumero[0] < TabJoueurNumero[1])||(TabJoueurNumero[0] < TabJoueurNumero[2])||(TabJoueurNumero[0]<TabJoueurNumero[3]))
+    var PlusPetitJoueur
+
+    for (i = 0; i < TabJoueurNumero.length; i++) {
+
+
+        if (TabJoueurNumero[i] < PlusPetitJoueur) {
+            PlusPetitJoueur = TabJoueurNom[i];
+        }
+    }
+
+    return PlusPetitJoueur;
+
+    document.getElementById("lblReponse").innerHTML = "Le pire joueur est le numéro " + TabJoueurNumero[i]
+
+
+}
+
+function  btnTrouverMeilleur_onclick()
+{
+    var PlusgrandJoueur
+
+    for (i = 0; i < TabJoueurNumero.length; i++) {
+
+
+        if (TabJoueurNumero[i] > PlusgrandJoueur) {
+            PlusgrandJoueur = TabJoueurNom[i];
+        }
+    }
+
+    return PlusgrandJoueur;
+
+    document.getElementById("lblReponse").innerHTML = "Le meillleur joueur est le numéro " + TabJoueurNumero[i]
+}
+
+/*if ((TabJoueurNumero[0] < TabJoueurNumero[1])||(TabJoueurNumero[0] < TabJoueurNumero[2])||(TabJoueurNumero[0]<TabJoueurNumero[3]))
     {
-        document.getElementById("lblReponse").innerHTML = "Le pire joueur est le numéro 1 ";
+        PlusPetitJoueur = 1;
+
     }
     else if ((TabJoueurNumero[1] < TabJoueurNumero[0])||(TabJoueurNumero[1] < TabJoueurNumero[2])||(TabJoueurNumero[1]<TabJoueurNumero[3]))
     {
-        document.getElementById("lblReponse").innerHTML = "Le pire joueur est le numéro 2 ";
+        PlusPetitJoueur = 2;
+
     }
     else if ((TabJoueurNumero[2] < TabJoueurNumero[1])||(TabJoueurNumero[2] < TabJoueurNumero[0])||(TabJoueurNumero[2]<TabJoueurNumero[3]))
     {
-        document.getElementById("lblReponse").innerHTML = "Le pire joueur est le numéro 3 ";
+        PlusPetitJoueur = 3;
+
     }
     else
     {
-        document.getElementById("lblReponse").innerHTML = "Le pire joueur est le numéro 4 ";
-    }
-}
+        PlusPetitJoueur = 4;*/
+
+
